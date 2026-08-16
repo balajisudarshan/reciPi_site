@@ -3,17 +3,14 @@ import React from "react";
 import phone from "@/assets/phone.png";
 import { FaAndroid, FaArrowCircleRight } from "react-icons/fa";
 import HeadingBadge from "../components/HeadingBadge";
+import HeaderText from "../components/HeaderText";
 const Hero = () => {
   return (
-    <main>
+    <main className="relative overflow-hidden bg-[radial-gradient(circle_at_70%_40%,#fff0e3_0%,#fffaf5_45%,#ffffff_100%)]">
       <div className="pt-30 sm:px-20 text-center sm:text-start px-10 flex flex-col sm:flex-row items-center justify-betw  een gap-10 sm:gap-30">
         <div className="flex-2">
           <HeadingBadge text="Cook Smarter Live Better" />
-          <h1 className="text-7xl font-bold tracking-tight">
-            Cook Smarter
-            <br />
-            <span className="text-[#ff6b00]">Eat Better</span>
-          </h1>
+          <HeaderText text1="Cook Smarter" text2="Eat Better" />
           <p className="text-md font-light my-5 text-gray-500 ">
             Discover thousand of recipes , personalised recommendations and easy
             cooking . Assistant curated collections and beautiful cooking
@@ -42,6 +39,7 @@ const Hero = () => {
           />
         </div>
       </div>
+
     </main>
   );
 };
