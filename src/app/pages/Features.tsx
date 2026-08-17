@@ -136,7 +136,7 @@ const featureCard: {
     ];
 const Features = () => {
     return (
-        <section className="sm:px-20 px-6 pt-24 pb-24 bg-[#fffaf5]">
+        <section id="features" className="sm:px-20 px-6 pt-24 pb-24 bg-[#fffaf5]">
             <div className="max-w-7xl mx-auto">
 
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">

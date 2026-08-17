@@ -1,13 +1,14 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
+const DOWNLOAD_URL =
+    "https://drive.google.com/file/d/1UW8kLpZXhu_L7UAnbsgmqg4Xwn098i7F/view?usp=sharing";
+
 const links = [
     { label: "Features", href: "#features" },
-    { label: "Recipes", href: "#recipes" },
-    { label: "ScreenShots", href: "#ScreenShots" },
-    { label: "About", href: "#about" },
+    { label: "Screenshots", href: "#screenshots" },
 ];
 
 export default function NavBar() {
@@ -49,10 +50,10 @@ export default function NavBar() {
                     </ul>
 
                     <div className="hidden md:flex">
-                        <Link href="#download" className="navbar-cta">
+                        <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="navbar-cta">
                             <DownloadIcon />
                             Download
-                        </Link>
+                        </a>
                     </div>
 
                     <button
@@ -104,10 +105,16 @@ export default function NavBar() {
                 </nav>
 
                 <div className="mt-auto">
-                    <Link href="#download" className="navbar-cta justify-center w-full" onClick={() => setOpen(false)}>
+                    <a
+                        href={DOWNLOAD_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="navbar-cta justify-center w-full"
+                        onClick={() => setOpen(false)}
+                    >
                         <DownloadIcon />
                         Download the App
-                    </Link>
+                    </a>
                 </div>
             </aside>
         </>

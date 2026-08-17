@@ -9,7 +9,7 @@ import ingredient from "@/assets/ingr.png";
 import fav from "@/assets/fav.png";
 const Screenshots = () => {
     return (
-        <section className="bg-white py-24 px-6 sm:px-20">
+        <section id="screenshots" className="bg-white py-24 px-6 sm:px-20">
             <div className="max-w-6xl mx-auto">
 
                 <div className="flex flex-col items-center text-center mb-20">

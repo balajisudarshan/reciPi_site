@@ -18,10 +18,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 sm:gap-10 items-center justify-center sm:justify-start">
-            <button className="bg-[#e85200] flex items-center text-white p-2 px-5 rounded-4xl cursor-pointer hover:bg-[#d04a00] transition-colors w-fit sm:w-auto">
+            <a
+              href="https://drive.google.com/file/d/1UW8kLpZXhu_L7UAnbsgmqg4Xwn098i7F/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="hero-download-btn"
+              className="bg-[#e85200] flex items-center text-white p-2 px-5 rounded-4xl cursor-pointer hover:bg-[#d04a00] transition-colors w-fit sm:w-auto no-underline"
+            >
               Download Apk
               <FaAndroid className="ml-2" />
-            </button>
+            </a>
             <button className="bg-[#fff] flex items-center text-black border-1 border-gray-400 p-2 px-5 rounded-4xl cursor-pointer hover:bg-[#f2f2f2] transition-colors w-fit sm:w-auto">
               Explore Features
               <FaArrowCircleRight className="ml-2" />

@@ -2,6 +2,8 @@ import NavBar from "./components/NavBar"
 import Features from "./pages/Features"
 import Hero from "./pages/Hero"
 import Screenshots from "./pages/Screenshots"
+import Footer from "./components/Footer"
+
 const Home = () => {
   return (
     <div className="font-sans">
@@ -9,6 +11,7 @@ const Home = () => {
       <Hero />
       <Features />
       <Screenshots />
+      <Footer />
     </div>
   )
 }
